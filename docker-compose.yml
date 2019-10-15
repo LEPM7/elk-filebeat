@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  elk:
+    build: .
+    image: elk_local
+    container_name: elk_local
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"
+    volumes:
+      - ./conf/:/opt/bin/
+      - ./logstash:/etch/logstash/conf.d
+      - ./elasticsearch:/var/lib/elasticsearch
+      - ./logs:/home/logs
