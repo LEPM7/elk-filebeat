@@ -4,12 +4,15 @@ services:
     build: .
     image: elk_local
     container_name: elk_local
+    restart: always
     ports:
       - "5601:5601"
       - "9200:9200"
       - "5044:5044"
     volumes:
       - ./conf/:/opt/bin/
-      - ./logstash:/etch/logstash/conf.d
+      - ./logstash:/etc/logstash/conf.d
       - ./elasticsearch:/var/lib/elasticsearch
       - ./logs:/home/logs
+      - ./filebeat/:/etc/filebeat/
+    command: bash -c 'service filebeat start && /usr/local/bin/start.sh '
