@@ -1,0 +1,6 @@
+2019-10-07 21:44:03,384 DEBUG - DownloadManager::Downloading Qmx from URL=http://p-cdn1-802-cg14-linear-cbd46b77.movetv.com/15802/live/FOODHD/2eeefeace93011e9bf660025b5471213/index.qmx
+2019-10-07 21:44:03,385 DEBUG - DownloadManager::return data from Cache. URL=http://p-cdn1-802-cg14-linear-cbd46b77.movetv.com/15802/live/FOODHD/2eeefeace93011e9bf660025b5471213/index.qmx
+2019-10-07 21:44:03,385 DEBUG - DownloadManager::return data from Cache. URL=http://p-cdn1-802-cg14-linear-cbd46b77.movetv.com/cms/publish3/container/scheduleqvt/06166c7e4b7b4ae78387ad39e52f33eb.mpd
+2019-10-07 21:44:03,388 DEBUG - DownloadManager::Qmx successfully downloaded in TIME=4 ms. URL=http://p-cdn1-802-cg14-linear-cbd46b77.movetv.com/15802/live/FOODHD/2eeefeace93011e9bf660025b5471213/index.qmx
+2019-10-07 21:44:09,978 DEBUG - DownloadManager::Downloading qvt from URL=http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/8d2fb85451eb4c9ab80f993ed1bb622c.qvt
+2019-10-07 21:44:10,570 DEBUG - DownloadManager::Qvt successfully downloaded in TIME=592 ms URL=http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/8d2fb85451eb4c9ab80f993ed1bb622c.qvt
