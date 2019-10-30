@@ -2,7 +2,7 @@ version: '3.3'
 services:
   elk:
     build: .
-    image: elk_local
+    image: "elk_local"
     container_name: elk_local
     restart: always
     ports:

@@ -1,0 +1,12 @@
+2019-10-28 18:04:21,945 DEBUG - DownloadManager::Qvt successfully downloaded in TIME=660 ms URL=http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/c3780c386c4d4b1dbccf478ad8e7ae16.qvt PER_TIME=660
+2019-10-28 18:04:22,716 DEBUG - DownloadManager::Qmx successfully downloaded in TIME=764 ms. URL=http://p-cdn3-804-cg14-linear-cbd46b77.movetv.com/15804/live/DIYHD/4e8ee0d4f9bf11e9a0930025b5471112/index.qmx PER_TIME=764
+2019-10-28 18:04:22,733 DEBUG - TimelineServices::load timeline PER_TIME=779 ms
+2019-10-28 18:04:22,739 DEBUG - TimelineServices::Create timeline TYPE=createNewTimeline PER_TIME=1453 ms
+2019-10-28 18:04:22,739 DEBUG - PlayerController::Create timeline PER_TIME=1452 ms
+2019-10-28 18:04:25,045 DEBUG - PlayerController::Play streamer PER_TIME=2262 ms
+2019-10-28 18:04:38,491 DEBUG - DownloadManager::Qvt successfully downloaded in TIME=634 ms URL=http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/c3780c386c4d4b1dbccf478ad8e7ae16.qvt PER_TIME=634
+2019-10-28 18:04:39,110 DEBUG - DownloadManager::Qmx successfully downloaded in TIME=613 ms. URL=http://p-cdn1-804-cg14-linear-cbd46b77.movetv.com/15804/live/DIYHD/4e8ee0d4f9bf11e9a0930025b5471112/index.qmx PER_TIME=613
+2019-10-28 18:04:39,151 DEBUG - TimelineServices::load timeline PER_TIME=651 ms
+2019-10-28 18:04:53,744 DEBUG - DownloadManager::Qvt successfully downloaded in TIME=636 ms URL=http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/c3780c386c4d4b1dbccf478ad8e7ae16.qvt PER_TIME=636
+2019-10-28 18:04:53,747 DEBUG - DownloadManager::Qmx successfully downloaded in TIME=1 ms. URL=http://p-cdn1-804-cg14-linear-cbd46b77.movetv.com/15804/live/DIYHD/4e8ee0d4f9bf11e9a0930025b5471112/index.qmx PER_TIME=1
+2019-10-28 18:04:53,747 DEBUG - TimelineServices::load timeline PER_TIME=0 ms
