@@ -15,4 +15,4 @@ services:
       - ./elasticsearch:/var/lib/elasticsearch
       - ./logs:/home/logs
       - ./filebeat/:/etc/filebeat/
-    command: bash -c 'service filebeat start && /usr/local/bin/start.sh '
+    command: bash -c 'service filebeat start && opt/logstash/bin/logstash-plugin install logstash-filter-aggregate && /usr/local/bin/start.sh '
