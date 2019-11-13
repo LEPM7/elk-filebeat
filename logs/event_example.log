@@ -1,9 +1,8 @@
-2019-11-12 10:17:50,792 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' EVENT=PLAY_START TASK=1
+2019-11-12 10:17:50,792 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE=PLAY_START
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
 2019-11-12 10:17:51,371 DEBUG - TimelineServices:: response body=<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak timeOffset="00:16:38.085" breakId="1102511" breakType="linear"><vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1"><vmap:VASTAdData><VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd"/></vmap:VASTAdData></vmap:AdSource><vmap:TrackingEvents><vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=c082&n=381963%3B191701%3B147530%3B187827%3B188286%3B372496%3B375524%3B375613%3B375617%3B375620%3B376521%3B378491%3B379619%3B382283%3B382314%3B382315%3B384777%3B386329%3B393638%3B501207%3B505334%3B510702%3B510839%3B512028%3B512029&t=1573575471693802003&f=&cn=slotImpression&et=i&tpos=998&init=1&slid=0]]></vmap:Tracking></vmap:TrackingEvents></vmap:AdBreak></vmap:VMAP>
 2019-11-12 10:17:53,767 DEBUG - PlayerController::Fire CORE_EVENT='Play' for analytics ASSET_GUID='89502d19db744162a2ff374b55bffc83' CURRENT_POS=0:16:52:908
 2019-11-12 10:17:53,970 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473490,"time":1015.886099}
-2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 EVENT=FIRST_RENDER
 2019-11-12 10:17:54,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473740,"time":1016.084647}
 2019-11-12 10:17:54,470 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473991,"time":1016.335355}
 2019-11-12 10:17:54,720 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575474240,"time":1016.584758}
@@ -41,7 +40,56 @@
 2019-11-12 10:18:00,972 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480493,"time":1022.837651}
 2019-11-12 10:18:01,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480740,"time":1023.084754}
 2019-11-12 10:18:01,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480990,"time":1023.334799}
-2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 EVENT=FIRST_RENDER TASK=1
+2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
+2019-11-12 10:17:50,794 DEBUG - PlayerController::Fire unload
+2019-11-12 10:17:50,794 DEBUG - BitrateManager::Updating content bitrate to CONSTRAINT={"min":0,"max":0}
+2019-11-12 10:17:50,795 DEBUG - PermissionManager:: Playback Stopped. Stop heartbeating. StageId= OTT_1
+2019-11-12 10:17:50,795 DEBUG - ContentAuthorizer:: stop hearbeating. StageId=OTT_1
+2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE=FIRST_RENDER
+2019-11-12 10:17:50,795 DEBUG - WeatherHelper::Changing channel…
+2019-11-12 10:17:50,799 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE=PLAY_START
+2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
+2019-11-12 10:17:51,371 DEBUG - TimelineServices:: response body=<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak timeOffset="00:16:38.085" breakId="1102511" breakType="linear"><vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1"><vmap:VASTAdData><VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd"/></vmap:VASTAdData></vmap:AdSource><vmap:TrackingEvents><vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=c082&n=381963%3B191701%3B147530%3B187827%3B188286%3B372496%3B375524%3B375613%3B375617%3B375620%3B376521%3B378491%3B379619%3B382283%3B382314%3B382315%3B384777%3B386329%3B393638%3B501207%3B505334%3B510702%3B510839%3B512028%3B512029&t=1573575471693802003&f=&cn=slotImpression&et=i&tpos=998&init=1&slid=0]]></vmap:Tracking></vmap:TrackingEvents></vmap:AdBreak></vmap:VMAP>
+2019-11-12 10:17:53,767 DEBUG - PlayerController::Fire CORE_EVENT='Play' for analytics ASSET_GUID='89502d19db744162a2ff374b55bffc83' CURRENT_POS=0:16:52:908
+2019-11-12 10:17:53,970 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473490,"time":1015.886099}
+2019-11-12 10:17:54,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473740,"time":1016.084647}
+2019-11-12 10:17:54,470 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575473991,"time":1016.335355}
+2019-11-12 10:17:54,720 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575474240,"time":1016.584758}
+2019-11-12 10:17:54,969 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575474490,"time":1016.834738}
+2019-11-12 10:17:55,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575474740,"time":1017.084634}
+2019-11-12 10:17:50,793 DEBUG - PlayerController::Stop and unload
+2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
+2019-11-12 10:17:50,794 DEBUG - PlayerController::Fire unload
+2019-11-12 10:17:50,794 DEBUG - BitrateManager::Updating content bitrate to CONSTRAINT={"min":0,"max":0}
+2019-11-12 10:17:50,795 DEBUG - PermissionManager:: Playback Stopped. Stop heartbeating. StageId= OTT_1
+2019-11-12 10:17:50,795 DEBUG - ContentAuthorizer:: stop hearbeating. StageId=OTT_1
+2019-11-12 10:17:50,795 DEBUG - WeatherHelper::Changing channel…
+2019-11-12 10:17:55,470 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575474990,"time":1017.334806}
+2019-11-12 10:17:55,721 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575475241,"time":1017.586164}
+2019-11-12 10:17:55,969 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575475490,"time":1017.834643}
+2019-11-12 10:17:56,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575475740,"time":1018.084831}
+2019-11-12 10:17:56,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575475990,"time":1018.334656}
+2019-11-12 10:17:56,719 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575476240,"time":1018.584729}
+2019-11-12 10:17:56,971 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575476491,"time":1018.835705}
+2019-11-12 10:17:57,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575476740,"time":1019.084661}
+2019-11-12 10:17:57,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575476990,"time":1019.334669}
+2019-11-12 10:17:57,719 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575477240,"time":1019.584749}
+2019-11-12 10:17:57,969 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575477490,"time":1019.834786}
+2019-11-12 10:17:58,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575477740,"time":1020.084672}
+2019-11-12 10:17:58,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575477990,"time":1020.334656}
+2019-11-12 10:17:58,719 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575478240,"time":1020.584906}
+2019-11-12 10:17:58,980 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575478498,"time":1020.842799}
+2019-11-12 10:17:59,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575478740,"time":1021.084754}
+2019-11-12 10:17:59,482 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575478990,"time":1021.334727}
+2019-11-12 10:17:59,720 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575479240,"time":1021.584877}
+2019-11-12 10:17:59,970 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575479490,"time":1021.83499}
+2019-11-12 10:18:00,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575479740,"time":1022.084677}
+2019-11-12 10:18:00,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575479990,"time":1022.334705}
+2019-11-12 10:18:00,719 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480240,"time":1022.58465}
+2019-11-12 10:18:00,972 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480493,"time":1022.837651}
+2019-11-12 10:18:01,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480740,"time":1023.084754}
+2019-11-12 10:18:01,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480990,"time":1023.334799}
+2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE=FIRST_RENDER
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Fire unload
 2019-11-12 10:17:50,794 DEBUG - BitrateManager::Updating content bitrate to CONSTRAINT={"min":0,"max":0}
