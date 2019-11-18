@@ -1,4 +1,4 @@
-2019-11-12 10:17:50,792 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE=PLAY_START
+2019-11-12 10:17:50,792 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE_START=VST
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
 2019-11-12 10:17:51,371 DEBUG - TimelineServices:: response body=<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak timeOffset="00:16:38.085" breakId="1102511" breakType="linear"><vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1"><vmap:VASTAdData><VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd"/></vmap:VASTAdData></vmap:AdSource><vmap:TrackingEvents><vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=c082&n=381963%3B191701%3B147530%3B187827%3B188286%3B372496%3B375524%3B375613%3B375617%3B375620%3B376521%3B378491%3B379619%3B382283%3B382314%3B382315%3B384777%3B386329%3B393638%3B501207%3B505334%3B510702%3B510839%3B512028%3B512029&t=1573575471693802003&f=&cn=slotImpression&et=i&tpos=998&init=1&slid=0]]></vmap:Tracking></vmap:TrackingEvents></vmap:AdBreak></vmap:VMAP>
 2019-11-12 10:17:53,767 DEBUG - PlayerController::Fire CORE_EVENT='Play' for analytics ASSET_GUID='89502d19db744162a2ff374b55bffc83' CURRENT_POS=0:16:52:908
@@ -45,9 +45,9 @@
 2019-11-12 10:17:50,794 DEBUG - BitrateManager::Updating content bitrate to CONSTRAINT={"min":0,"max":0}
 2019-11-12 10:17:50,795 DEBUG - PermissionManager:: Playback Stopped. Stop heartbeating. StageId= OTT_1
 2019-11-12 10:17:50,795 DEBUG - ContentAuthorizer:: stop hearbeating. StageId=OTT_1
-2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE=FIRST_RENDER
+2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE_END=VST
 2019-11-12 10:17:50,795 DEBUG - WeatherHelper::Changing channel…
-2019-11-12 10:17:50,799 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE=PLAY_START
+2019-11-12 10:17:50,799 DEBUG - PlayerController::Play called QVT='http://cbd46b77.cdn.cms.movetv.com/cms/publish3/container/scheduleqvt/896847c0a4fb46e1a53d1030e47f4f25.qvt' CHANNELGUID='c763c4c3001f4a04970bca35000c0ded' MEASURE_START=VST
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
 2019-11-12 10:17:51,371 DEBUG - TimelineServices:: response body=<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak timeOffset="00:16:38.085" breakId="1102511" breakType="linear"><vmap:AdSource allowMultipleAds="true" followRedirects="true" id="1"><vmap:VASTAdData><VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:noNamespaceSchemaLocation="vast.xsd"/></vmap:VASTAdData></vmap:AdSource><vmap:TrackingEvents><vmap:Tracking event="breakStart"><![CDATA[http://5d40b.s.fwmrm.net/ad/l/1?s=c082&n=381963%3B191701%3B147530%3B187827%3B188286%3B372496%3B375524%3B375613%3B375617%3B375620%3B376521%3B378491%3B379619%3B382283%3B382314%3B382315%3B384777%3B386329%3B393638%3B501207%3B505334%3B510702%3B510839%3B512028%3B512029&t=1573575471693802003&f=&cn=slotImpression&et=i&tpos=998&init=1&slid=0]]></vmap:Tracking></vmap:TrackingEvents></vmap:AdBreak></vmap:VMAP>
 2019-11-12 10:17:53,767 DEBUG - PlayerController::Fire CORE_EVENT='Play' for analytics ASSET_GUID='89502d19db744162a2ff374b55bffc83' CURRENT_POS=0:16:52:908
@@ -89,7 +89,7 @@
 2019-11-12 10:18:00,972 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480493,"time":1022.837651}
 2019-11-12 10:18:01,219 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480740,"time":1023.084754}
 2019-11-12 10:18:01,469 DEBUG - [BitmovinVideoRenderer::timeupdateHandler] - [BitmovinVideoRenderer __0__ PLAYING] Timeupdate EVENT={"type":"timechanged","timestamp":1573575480990,"time":1023.334799}
-2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE=FIRST_RENDER
+2019-11-12 10:17:53,971 DEBUG - Streamer:: First Timeupdate from platform renderer. TIME=1015886.0989999999 MEASURE_END=VST
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Emit core event EVENT=Stop
 2019-11-12 10:17:50,794 DEBUG - PlayerController::Fire unload
 2019-11-12 10:17:50,794 DEBUG - BitrateManager::Updating content bitrate to CONSTRAINT={"min":0,"max":0}
