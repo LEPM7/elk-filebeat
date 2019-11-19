@@ -11,7 +11,8 @@ services:
       - "5044:5044"
     volumes:
       - ./conf/:/opt/bin/
-      - ./logstash:/etc/logstash/conf.d
+      - ./logstash/conf.d:/etc/logstash/conf.d
+      - ./logstash/config:/opt/logstash/config
       - ./elasticsearch:/var/lib/elasticsearch
       - ./logs:/home/logs
       - ./filebeat/:/etc/filebeat/
