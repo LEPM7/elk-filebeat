@@ -1,19 +1,76 @@
-version: '3.3'
+version: '3.2'
 services:
-  elk:
-    build: .
-    image: "elk_local"
-    container_name: elk_local
-    restart: always
+  elasticsearch:
+    container_name: local_elasticsearch
+    build:
+      context: elasticsearch
+      args:
+        ELK_VERSION: $ELK_VERSION
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      discovery.type: single-node
+    networks:
+      - elk
+
+
+  logstash:
+    container_name: local_logstash
+    build:
+      context: logstash/
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes: 
+      - type: bind
+        source: ./logstash/pipeline
+        target: /usr/share/logstash/pipeline
+      - type: bind
+        source: ./logstash/config/logstash.yml
+        target: /usr/share/logstash/config/logstash.yml
+    ports:
+      - "5400:5400"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+
+  kibana:
+    container_name: local_kibana
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: $ELK_VERSION
     ports:
       - "5601:5601"
-      - "9200:9200"
-      - "5044:5044"
-    volumes:
-      - ./conf/:/opt/bin/
-      - ./logstash/conf.d:/etc/logstash/conf.d
-      - ./logstash/config:/opt/logstash/config
-      - ./elasticsearch:/var/lib/elasticsearch
-      - ./logs:/home/logs
-      - ./filebeat/:/etc/filebeat/
-    command: bash -c 'service filebeat start && opt/logstash/bin/logstash-plugin install logstash-filter-aggregate && /usr/local/bin/start.sh '
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+
+  filebeat:
+    container_name: local_filebeat
+    build: 
+      context: filebeat
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes: 
+      - type: bind
+        source: ./filebeat/filebeat.yml
+        target: /usr/share/filebeat/filebeat.yml
+      - type: bind
+        source: ./logs/
+        target: /home/logs
+    networks:
+      - elk
+    depends_on: 
+      - logstash 
+
+networks:
+  elk:
+    driver: bridge
