@@ -93,9 +93,9 @@ setup.template.settings:
 #tags: ["service-X", "web-tier"]
 
 # Optional fields that you can specify to add additional information to the
-output.file:
-  path: "/tmp/filebeat"
-  filename: filebeatLog
+#output.file:
+  #path: "/tmp/filebeat"
+  #filename: filebeatLog
 #fields:
 #  env: staging
 
@@ -160,6 +160,7 @@ setup.kibana:
 output.logstash:
   # The Logstash hosts
   hosts: ["logstash:5044"]
+  worker: 1
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
