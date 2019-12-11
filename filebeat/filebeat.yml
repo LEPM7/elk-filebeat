@@ -93,7 +93,9 @@ setup.template.settings:
 #tags: ["service-X", "web-tier"]
 
 # Optional fields that you can specify to add additional information to the
-# output.
+output.file:
+  path: "/tmp/filebeat"
+  filename: filebeatLog
 #fields:
 #  env: staging
 
